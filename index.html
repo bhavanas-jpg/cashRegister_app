@@ -1,94 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    />
-    <title>Cash Register App</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="heading">Cash Register Manager</h1>
-      <p class="description">
-        Enter the bill amount and cash given by the customer <br />and know
-        minimum number of notes to return
-      </p>
-      <label for="bill-amount">Bill Amount</label>
-      <input type="number" id="bill-amount"
-      placeholder="enter the bill amount" />
-      <button id="enter-cash">Next</button>
-      <div id="cash-container">
-        <label for="cash-given">Cash Given</label>
-        <input id="cash-given" type="number" 
-        placeholder="enter the cash given"/>
-        <button id="check-button">Check</button>
-        <p id="error-message"></p>
-      </div>
-      <table class="change-table" id="show-amount">
-        <caption>
-          Return Change
-        </caption>
-        <tr>
-          <th>No of notes</th>
-          <td class="no-of-notes"></td>
-          <td class="no-of-notes"></td>
-          <td class="no-of-notes"></td>
-          <td class="no-of-notes"></td>
-          <td class="no-of-notes"></td>
-          <td class="no-of-notes"></td>
-          <td class="no-of-notes"></td>
-        </tr>
-        <tr>
-          <th>Note</th>
-          <td>2000</td>
-          <td>500</td>
-          <td>100</td>
-          <td>20</td>
-          <td>10</td>
-          <td>5</td>
-          <td>1</td>
-        </tr>
-      </table>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <title>Cash Register App</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="heading">Cash Register Manager</h1>
+    <p class="description">
+      Enter the bill amount and cash given by the customer <br />and know
+      minimum number of notes to return
+    </p>
+    <label for="bill-amount">Bill Amount</label>
+    <input type="number" id="bill-amount" placeholder="enter the bill amount" />
+    <button id="enter-cash">Next</button>
+    <div id="cash-container">
+      <label for="cash-given">Cash Given</label>
+      <input id="cash-given" type="number" placeholder="enter the cash given" />
+      <button id="check-button">Check</button>
+      <p id="error-message"></p>
     </div>
-    <div>
-      <footer>
-        <ul class="list-unordered footer-list">
-          <li>
-            <a class="links" href="https://github.com/bhavanas-jpg"
-              ><i class="bx bxl-github"></i
-            ></a>
-          </li>
-          <li>
-            <a class="links" href="https://dev.to/bhavanasjpg"
-              ><i class="bx bxl-dev-to"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              class="links"
-              href="https://www.linkedin.com/in/bhavana-s-38513a168"
-              ><i class="bx bxl-linkedin"></i
-            ></a>
-          </li>
-          <li>
-            <a class="links" href="https://twitter.com/Bhavana814"
-              ><i class="bx bxl-twitter"></i
-            ></a>
-          </li>
-          <li>
-            <a class="links" href="https://www.instagram.com/bhavanas841/"
-              ><i class="bx bxl-instagram"></i
-            ></a>
-          </li>
-        </ul>
-        <p><span>© | Oshna |🤍</span></p>
-      </footer>
-    </div>
-    <script src="cash.js"></script>
-  </body>
+    <table class="change-table" id="show-amount">
+      <caption>
+        Return Change
+      </caption>
+      <tr>
+        <th>No of notes</th>
+        <td class="no-of-notes"></td>
+        <td class="no-of-notes"></td>
+        <td class="no-of-notes"></td>
+        <td class="no-of-notes"></td>
+        <td class="no-of-notes"></td>
+        <td class="no-of-notes"></td>
+        <td class="no-of-notes"></td>
+      </tr>
+      <tr>
+        <th>Note</th>
+        <td>2000</td>
+        <td>500</td>
+        <td>100</td>
+        <td>20</td>
+        <td>10</td>
+        <td>5</td>
+        <td>1</td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <footer>
+      <ul class="list-unordered footer-list">
+        <li>
+          <a class="links" href="https://github.com/bhavanas-jpg"><i class="bx bxl-github"></i></a>
+        </li>
+        <li>
+          <a class="links" href="https://dev.to/bhavanasjpg"><i class="bx bxl-dev-to"></i></a>
+        </li>
+        <li>
+          <a class="links" href="https://www.linkedin.com/in/bhavana-s-38513a168"><i class="bx bxl-linkedin"></i></a>
+        </li>
+        <li>
+          <a class="links" href="https://twitter.com/Bhavana814"><i class="bx bxl-twitter"></i></a>
+        </li>
+        <li>
+          <a class="links" href="https://www.instagram.com/bhavanas841/"><i class="bx bxl-instagram"></i></a>
+        </li>
+      </ul>
+      <p><span>© | Oshna |🤍</span></p>
+    </footer>
+  </div>
+  <script src="cash.js"></script>
+</body>
+
 </html>
