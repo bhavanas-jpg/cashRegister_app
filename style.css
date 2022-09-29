@@ -1,10 +1,113 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.container{
+
+body {
+    background-color: #FEFBF6;
+    font-family: 'Poppins', sans-serif;
+    color: #764AF1;
+
+}
+
+.container {
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1 {
+    margin-top: 40px
+}
+
+.description {
+    margin: 20px;
+    font-size: 20px;
+}
+
+#cash-container {
+    display: flex;
+    flex-direction: column;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#show-amount {
+    display: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table.change-table tbody {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+    padding: 15px;
+}
+
+tr {
+    border: 1px solid #000;
+}
+
+th {
+    padding: 10px 20px;
+}
+
+input {
+    border: 1px solid #764AF1;
+    outline: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 18px
+}
+input::placeholder{
+    font-size: 12px;
+}
+
+label {
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+#check-button,
+#enter-cash {
+    outline: none;
+    border: 1px solid;
+    padding: 10px 20px;
+    margin: 15px 0;
+    border-radius: 20px;
+    background-color: #764AF1;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.footer-list li {
+    margin-right: 20px;
+}
+
+.footer-list i {
+    font-size: 25px;
+    color: #764AF1;
 }
